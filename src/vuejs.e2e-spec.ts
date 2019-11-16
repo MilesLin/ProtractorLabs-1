@@ -1,6 +1,6 @@
 import { browser, by, element, $, $$, ExpectedConditions as EC } from 'protractor';
 
-fdescribe('the user try to search on vuejs', () => {
+describe('the user try to search on vuejs', () => {
   beforeEach( async () => {
     await browser.waitForAngularEnabled(false);
     await browser.get('https://vuejs.org/');
