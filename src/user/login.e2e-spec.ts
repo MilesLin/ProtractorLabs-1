@@ -1,6 +1,6 @@
 import { browser, by, element, $, $$, ExpectedConditions as EC } from 'protractor';
 
-fdescribe('the user try to login', () => {
+describe('the user try to login', () => {
   beforeEach( async () => {
     await browser.get('/');
   });
@@ -13,7 +13,7 @@ fdescribe('the user try to login', () => {
     expect(await browser.getCurrentUrl()).toBe(browser.baseUrl + 'events');
   });
 
-  fit('should show login failed when typing wrong password', async () => {
+  it('should show login failed when typing wrong password', async () => {
     await element(by.linkText('登入')).click();
     await element(by.id('userName')).sendKeys('John');
     await element(by.id('password')).sendKeys('abc');
