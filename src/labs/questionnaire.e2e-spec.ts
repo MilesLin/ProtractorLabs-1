@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-fdescribe('the user submit a questionnaire', () => {
+describe('the user submit a questionnaire', () => {
   it('should type information', async () => {
     await browser.waitForAngularEnabled(false);
     await browser.get('labs/questionnaire');
