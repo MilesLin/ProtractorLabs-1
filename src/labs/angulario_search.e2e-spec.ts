@@ -1,6 +1,6 @@
 import { browser, element, by, $, ExpectedConditions as EC } from 'protractor';
 
-describe('the user does search on angular.io', () => {
+fdescribe('the user does search on angular.io', () => {
 
   const searchResultsElement = element(by.className('search-results'));
 
@@ -17,7 +17,7 @@ describe('the user does search on angular.io', () => {
 
     // 如果上面發生 Timeout 意味著找不到 NgZone，且會發生錯誤，不會執行到這一行！
     const searchResult = await searchResultsElement.getText();
-    expect(searchResult).toContain('NgZone');
+    expect(searchResult).toContain('xyz');
   });
 
   it('should click NgZone on search result', async () => {
